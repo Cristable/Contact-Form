@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .contform{
+            background: rgb(216, 216, 216);
+            width: 50%;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .form label{
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+          
+        }
+        .form input{
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            border: none;
+            height: 25px;
+            font-size: small;
+        }
+        #country{
+            margin-bottom: 10px;
+        }
+        .form select{
+            display: block;
+            width: 100%;
+            border: none;
+            height: 25px;
+        }
+        .form textarea{
+            border: none;
+            outline: none;
+            width: 100%;
+            
+            margin-bottom: 10px;
+        }
+        .btn{
+            background-color:  rgb(31, 173, 31);
+            outline: none;
+            color: white;
+            width: 60px;
+            height: 30px;
+            font-size: small;
+            border-radius: 5px;
+            border: none;
+
+        }
+        
+
+    </style>
+
+</head>
+
+<body>
+    <form action="" class="contform">
+        <div class="form">
+            <div>
+                <label for="Name">First Name</label>
+                <input type="text" placeholder="Your name.." maxlength="15">   
+            </div>
+            <div>
+                <label for="Name">Last Name</label>
+                <input type="text" placeholder="Your last name.." maxlength="15">   
+            </div>
+            <div>
+                <label for="Country">Country</label>
+                <select name="" id="country">
+                    <option value="Ghana">Ghana</option>
+                    <option value="togo">Togo</option>
+                    <option value="niger">Niger</option>
+                    <option value="mali">Mali</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="benin">Benin</option>
+                    <option value="iran">Iran</option>
+                    
+
+
+                </select> 
+            </div>
+            <div>
+                <label for="Subject">Subject</label>
+                <textarea name="" id="" cols="10" rows="10" placeholder="Write Something.."></textarea>   
+            </div>
+            
+            <div>
+                <button class="btn">Submit</button>
+            </div>
+
+        </div>
+        
+        
+
+
+    </form>
+
+</body>
+
+</html>
